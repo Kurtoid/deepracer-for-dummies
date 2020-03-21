@@ -14,7 +14,8 @@ ln -s ${SCRIPTPATH}/$(eval echo "~${USER}")/.aws  ${SCRIPTPATH}/docker/volumes/
 
 # grab local training deepracer repo from crr0004 and log analysis repo from breadcentric
 cd  ${SCRIPTPATH}
-git clone --recurse-submodules https://github.com/ARCC-RACE/deepracer.git
+# modified w/ RTIS lab track
+git clone --recurse-submodules https://github.com/kurtoid/deepracer.git
 
 git clone https://github.com/ARCC-RACE/aws-deepracer-workshops.git && cd aws-deepracer-workshops && git checkout enhance-log-analysis && cd ..
 
