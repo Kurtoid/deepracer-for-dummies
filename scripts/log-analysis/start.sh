@@ -11,4 +11,4 @@ SCRIPTPATH=`dirname ${SCRIPT}`
 cd ${SCRIPTPATH}/../../aws-deepracer-workshops/log-analysis
 ln -s ${SCRIPTPATH}/../../docker/volumes/robo/checkpoint/log ${SCRIPTPATH}/../../aws-deepracer-workshops/log-analysis/logs
 ln -s ${SCRIPTPATH}/../../docker/volumes/minio/bucket/custom_files/reward.py ${SCRIPTPATH}/../../aws-deepracer-workshops/log-analysis/reward/reward.py
-jupyter notebook --no-browser
+python3 -m jupyter notebook --no-browser
